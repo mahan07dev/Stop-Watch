@@ -1,8 +1,13 @@
 let intervalID100;
+stopp = 0;
+normal = 0;
 function Stop() {
   clearInterval(intervalID100);
   document.getElementById("Start").setAttribute("onclick", "Start()");
   document.getElementById("screen").style.animationName = "noscreen";
+  stopp = 1;
+  anim = 0;
+  normal = 2;
   if (day == 1 && momo == 1) {
     document.querySelector("body").style =
       "background-color: black; color: gold;";
@@ -23,8 +28,11 @@ function Stop() {
     document.getElementById("Start").innerHTML = "Start";
   }
 }
-
+anim = 0;
 function Start() {
+  normal = 1;
+  stopp = 0;
+  anim = 1;
   document.getElementById("screen").style.animationName = "screen";
   ///میکرو ثانیه
   intervalID100 = setInterval(() => {
@@ -79,6 +87,7 @@ function Start() {
 }
 
 function Reset() {
+  normal = 0;
   document.getElementById("sadom").innerHTML = 0;
   document.getElementById("sec").innerHTML = 0;
   document.getElementById("min").innerHTML = 0;
@@ -93,12 +102,25 @@ function sadom() {
 /// حالت شب
 day = 0;
 momo = 0;
-function mode(params) {
+function mode() {
   if (day == 0) {
+    document.getElementById("screen").style = "background-color: black;";
     document.querySelector("body").style =
       "background-color: black; color: gold;";
-    document.getElementById("screen").style =
-      "background-color: black; border: 2px solid gold;";
+
+    if (normal == 0) {
+    } else {
+      if (stopp == 1) {
+        if (anim == 0 && stopp == 1) {
+          document.getElementById("screen").style =
+            "background-color: black; border: 2px solid red;";
+        } else {
+        }
+      } else {
+        document.getElementById("screen").style.animationName = "screen";
+      }
+    }
+
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Start").style =
@@ -108,8 +130,22 @@ function mode(params) {
     day = 1;
     momo = 1;
   } else {
-    document.querySelector("body").style = "background-color: ; color: ;";
     document.getElementById("screen").style = "background-color: ; border: ;";
+    document.querySelector("body").style = "background-color: ; color: ;";
+
+    if (normal == 0) {
+    } else {
+      if (stopp == 1) {
+        if (anim == 0 && stopp == 1) {
+          document.getElementById("screen").style =
+            "background-color: ; border: 2px solid red;";
+        } else {
+        }
+      } else {
+        document.getElementById("screen").style.animationName = "screen";
+      }
+    }
+
     document.getElementById("sadom").style =
       "background-color: ; color: ; border: ";
     document.getElementById("Start").style =
@@ -119,7 +155,6 @@ function mode(params) {
 
     document.getElementById("Start").style.backgroundColor =
       "rgb(162, 206, 95)";
-    document.getElementById("screen").style.borderColor = "";
     document.getElementById("Start").innerHTML = "Start";
     day = 0;
     momo = 0;
