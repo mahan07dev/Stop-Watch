@@ -3,7 +3,7 @@
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/mahan-07/Stop-Watch?color=lightskyblue)](https://github.com/mahan-07/Stop-Watch/graphs/commit-activity)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mahan-07/Stop-Watch)](#)
 
-This is a complete StopWatch with golden DarkMode and also it can support system DarkMode.
+This is a complete StopWatch with golden DarkMode and also sometimes, it can support system DarkMode.
 
 ## Features
 + It has Start/Stop and Reset buttons.
