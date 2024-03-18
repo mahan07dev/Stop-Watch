@@ -19,8 +19,6 @@ This is a complete StopWatch with golden DarkMode and also sometimes, it can sup
 
 + It has a simple and enjoyable animation.
 
-+ with particles js.
-
 enjoy!
 
 [![Static Badge](https://img.shields.io/badge/Follow-Me?style=for-the-badget&logo=github&label=Github&labelColor=black&link=https%3A%2F%2Fgithub.com%2Fmahan-07)
