@@ -26,4 +26,4 @@ enjoy!
 
 [![Static Badge](https://img.shields.io/badge/Pages-black?logo=GitHub%20Pages&label=GitHub&labelColor=gray)](https://mahan-07.github.io/myprojects/)
 
-[![Static Badge](https://img.shields.io/badge/Telegram-blue?style=social&logo=Telegram)](https://www.telegram.me/Ezio_Auditore00/)
+[![Static Badge](https://img.shields.io/badge/Telegram-blue?style=social&logo=Telegram)](https://www.telegram.me/mahan07dev/)
